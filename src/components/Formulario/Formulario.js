@@ -5,7 +5,7 @@ import ListaSuspensa from "../ListaSuspensa/ListaSuspensa";
 import styles from  './Formulario.module.css'
 
 
-const Formulario = () => {
+const Formulario = (props) => {
 
     const times = [
         'Programação',
@@ -24,7 +24,12 @@ const Formulario = () => {
 
     const aoSalvar = (e) => {
         e.preventDefault()
-        console.log('esse caraio funcionou =>', nome, cargo, imagem, time)
+        props.aoColaboradorCadastrado({
+            nome,
+            cargo,
+            imagem,
+            time
+        })
     }
 
     return (
@@ -55,7 +60,7 @@ const Formulario = () => {
             <ListaSuspensa 
             obrigatorio={true} 
             label="Time" 
-            itens={times}
+            itens={props.times}
             valor={time}
             aoAlterado={valor => setTime(valor)}
             />
