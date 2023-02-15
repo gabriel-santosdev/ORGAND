@@ -1,0 +1,24 @@
+.footer {
+    background: #6278f7;
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url("../../../public/images/fundo.png");
+}
+
+.socialIcones img{
+    margin: 10px;
+}
+
+.logo{
+    margin: 0 0 0 20px;
+    
+}
+
+.texto{
+ color: #fff;
+}
