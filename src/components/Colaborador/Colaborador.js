@@ -3,7 +3,7 @@ import styles from './Colaborador.module.css'
 const Colaborador = (props) => {
     return (
         <div className={styles.colaborador}>
-            <div className={styles.cabecalho}>
+            <div className={styles.cabecalho} style={{backgroundColor: props.corDeFundo}}>
                 <img src = {props.imagem} alt={props.nome}/>
             </div>
             <div className={styles.rodape}>
