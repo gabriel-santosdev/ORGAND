@@ -33,7 +33,7 @@ const Formulario = (props) => {
         setNome('')
         setCargo('')
         setImagem('')
-        setTime()
+        setTime('')
     }
 
     return (
